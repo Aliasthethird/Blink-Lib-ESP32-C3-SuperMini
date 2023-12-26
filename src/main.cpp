@@ -1,12 +1,12 @@
-#include <Blinker.h>
+#include "Blinker.h"
 
 #define LED_BUILTIN 8
 #define BLINK_INTERVAL 1.0f
 
-Blinker blinker(LED_BUILTIN); // Create a Blinker object
+Blinker blinker(LED_BUILTIN, BLINK_INTERVAL); // Create a Blinker object with LED pin and interval
 
 void setup() {
-    blinker.begin(BLINK_INTERVAL); // Initialize the blinker
+    // nothing to do here
 }
 
 void loop() {
